@@ -71,7 +71,7 @@ module.exports = {
                 from: `shourja.ganguly99@gmail.com`,
                 to: req.body.email,
                 subject: 'password reset code',
-                text: `Your password reset code link is http://localhost:3000/reset?email=${req.body.email}&q=${code}`,
+                text: `Your password reset code link is /reset?email=${req.body.email}&q=${code}`,
             };
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
