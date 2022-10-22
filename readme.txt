@@ -1,7 +1,7 @@
 url:https://passresetbackend.herokuapp.com
 
 to register:
-            path:/register
+            path:/auth/register
            example of req.body:
                     {
 	                    "email":"shourja.ganguly181@gmail.com",
@@ -10,7 +10,7 @@ to register:
 	                    "cpass":"12345"
                     }
 to login:
-            path:/login
+            path:/auth/login
             example of req.body:
             {
 	            "email":"shourja.ganguly181@gmail.com",
